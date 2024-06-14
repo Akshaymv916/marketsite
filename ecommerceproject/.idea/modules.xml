@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../PycharmProjects/.idea/PycharmProjects.iml" filepath="$PROJECT_DIR$/../../PycharmProjects/.idea/PycharmProjects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ecommerceproject.iml" filepath="$PROJECT_DIR$/.idea/ecommerceproject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../flasksite/.idea/flasksite.iml" filepath="$PROJECT_DIR$/../../flasksite/.idea/flasksite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../inmakesprojects/.idea/inmakesprojects.iml" filepath="$PROJECT_DIR$/../../inmakesprojects/.idea/inmakesprojects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../network/.idea/network.iml" filepath="$PROJECT_DIR$/../../network/.idea/network.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../opencv/.idea/opencv.iml" filepath="$PROJECT_DIR$/../../opencv/.idea/opencv.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../rest/.idea/rest.iml" filepath="$PROJECT_DIR$/../../rest/.idea/rest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../todo_project/.idea/todo_project.iml" filepath="$PROJECT_DIR$/../../todo_project/.idea/todo_project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../websitescraper/.idea/websitescraper.iml" filepath="$PROJECT_DIR$/../../websitescraper/.idea/websitescraper.iml" />
+    </modules>
+  </component>
+</project>

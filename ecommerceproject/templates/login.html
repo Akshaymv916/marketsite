@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CodePen - login &amp; signup form</title>
+    <link rel="stylesheet" href="{% static 'css/logstyle.css' %}" />
+    <script src="{% static 'js/script.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+  <body>
+    <script>
+        {% if messages %}
+        {% for message in messages %}
+        swal('{{message}}',{icon: "success",});
+      {% endfor %}
+      {% endif %}
+    </script>
+
+    <!-- partial:index.partial.html -->
+    <div class="wrapper">
+      <div class="title-text">
+        <div class="title login">Login Form</div>
+      </div>
+      <div class="form-inner">
+        <form action="log" class="login" method="post">
+          {% csrf_token %}
+          <div class="field">
+            <input
+              type="text"
+              placeholder="username"
+              id="use"
+              name="use"
+              required
+            />
+          </div>
+          <div class="field">
+            <input
+              type="password"
+              placeholder="Password"
+              id="pas"
+              name="pas"
+              required
+            />
+          </div>
+          <div class="pass-link"><a href="#">Forgot password?</a></div>
+          <div class="field btn">
+            <div class="btn-layer"></div>
+            <input type="submit" value="Login" />
+          </div>
+          <div class="signup-link">
+            Not a member? <a href="{% url 'shop:sign' %}">Signup now</a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- partial -->
+  </body>
+</html>

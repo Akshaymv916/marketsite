@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block metadescription %}
+
+This is the CART page.proceed to your review and items
+{% endblock %}
+
+{% block title %}
+    cart -ABC company Pvt Ltd
+{% endblock %}
+
+{% block content %}
+<center>
+<div class="dropdown">
+  <button class="dropbtn">SORT</button>
+  <div class="dropdown-content">
+    <a href="{% url 'shop:lh' %}">low to high</a>
+    <a href="{% url 'shop:hl' %}">high to low</a>
+  </div>
+</div>
+</center>
+<br>
+
+
+
+    <div class="row mx_auto">
+        {% for sort in data %}
+        <div class="my_bottom_margi col-9 col-sm-9 col-md-6  col-lg-3">
+      `      <div class="card text-center card border-success" style="min-width:8rem;min-height:8rem">
+                <a href="{{sort.get_url}}"><img class="card-img-top my_image" src="{{sort.image.url}}" style="width:190px;height:100px" alt="{{product.name}}"></a>
+            <div class="card-body">
+                <h4>{{sort.name}}</h4>
+                <p style="color:red;">MRP:{{sort.price}}</p>
+                <a class="btn btn-success" href="{% url 'cart:add_cart' sort.id %}">add to cart</a>
+
+            </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+<br>
+<br>
+{% endblock %}
